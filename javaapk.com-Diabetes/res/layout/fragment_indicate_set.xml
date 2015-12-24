@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/target_set" />
+
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/ok_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/submit_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dip"
+                android:layout_marginBottom="30dip"
+                android:background="@color/line_target" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/indicate_target_height"
+                        android:background="@color/high_sugar_bg"
+                        android:text="@string/indicate_high" />
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/indicate_target_height"
+                        android:background="@color/mid_sugar_bg"
+                        android:text="@string/indicate_normal" />
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/indicate_target_height"
+                        android:background="@color/low_sugar_bg"
+                        android:text="@string/indicate_low" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dip"
+                        android:layout_marginTop="@dimen/indicate_height_margin"
+                        android:background="@color/line_target" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dip"
+                        android:layout_marginTop="@dimen/indicate_height_margin"
+                        android:background="@color/line_target" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/target_width"
+                        android:layout_marginTop="@dimen/indicate_input_margin"
+                        android:background="@drawable/target_input_bg"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/high_indicate"
+                            style="@style/target_edit"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" />
+
+                        <TextView
+                            android:id="@+id/unin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:padding="8dip"
+                            android:text="@string/sugar_unit"
+                            android:textColor="@color/curren_day" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/target_width"
+                        android:layout_marginTop="@dimen/indicate_input_margin1"
+                        android:background="@drawable/target_input_bg"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/low_indicate"
+                            style="@style/target_edit"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:inputType="numberDecimal"
+                            android:layout_weight="1"
+                            android:maxLength="5" />
+
+                        <TextView
+                            android:id="@+id/unin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:padding="8dip"
+                            android:text="@string/sugar_unit"
+                            android:textColor="@color/curren_day" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

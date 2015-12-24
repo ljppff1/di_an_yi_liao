@@ -1,0 +1,309 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/medicine" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/save_btn"
+            android:background="@null"
+            android:src="@drawable/icon_btn_delete" />
+
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/ok_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/submit_btn" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/effect_title"
+                android:padding="9dip"
+                android:text="@string/medicine_summary"
+                android:textColor="@color/news_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <RelativeLayout
+                    android:id="@+id/class_controller"
+                    style="@style/medicine_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/medicine_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/medicine_class" />
+
+                    <TextView
+                        android:id="@+id/medicine_name"
+                        style="@style/medicine_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_hint"
+                        android:singleLine="true" 
+                        android:textColorHint="@color/hint_color"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/name_contro"
+                    style="@style/medicine_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/medicine_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/medicine_type" />
+
+                    <TextView
+                        android:id="@+id/medicne_class"
+                        style="@style/medicine_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/medicine_numcontro"
+                    style="@style/medicine_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/medicine_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/medicine_num" />
+
+                    <TextView
+                        android:id="@+id/medicine_num"
+                        style="@style/medicine_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_hint" 
+                        android:textColorHint="@color/hint_color"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/medicine_time_contro"
+                    style="@style/medicine_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/medicine_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/medicine_time" />
+
+                    <TextView
+                        android:id="@+id/medicine_time"
+                        style="@style/medicine_edittext"
+                        android:hint="@string/input_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/hint_color" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/weight_contro"
+                    style="@style/medicine_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/medicine_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/medicine_weight" />
+
+                    <EditText
+                        android:id="@+id/medicine_weight"
+                        style="@style/medicine_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="22dip"
+                        android:layout_toLeftOf="@+id/g_nion"
+                        android:hint="@string/input_hint"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/hint_color" />
+
+                    <TextView
+                        android:id="@id/g_nion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/m_unit"
+                        android:textColor="@color/label_color"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/day_contro"
+                    style="@style/medicine_item"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <TextView
+                        style="@style/medicine_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/medicine_day" />
+
+                    <EditText
+                        android:id="@+id/medicine_day"
+                        style="@style/medicine_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dip"
+                        android:layout_toLeftOf="@+id/day_nion"
+                        android:hint="@string/input_hint"
+                        android:inputType="number"
+                        android:textColorHint="@color/hint_color" />
+
+                    <TextView
+                        android:id="@id/day_nion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/day_tian"
+                        android:textColor="@color/label_color"
+                        android:textSize="@dimen/text_size_13" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/effect_title"
+                    android:padding="9dip"
+                    android:text="@string/medicine_toast"
+                    android:textColor="@color/news_title"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_size_16" />
+
+                <CheckBox
+                    android:id="@+id/alarm_eable"
+                    style="@style/eatimp_value"
+                    android:layout_width="48dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/close"
+                    android:textColor="@color/check_text_selector" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip" >
+
+                <com.dian.diabetes.widget.NListView
+                    android:id="@+id/medicine_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:descendantFocusability="blocksDescendants"
+                    android:divider="@drawable/divider"
+                    android:dividerHeight="0.8dip"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="false"
+                    android:listSelector="@color/transparent"
+                    android:scrollingCache="false"
+                    android:visibility="gone" >
+                </com.dian.diabetes.widget.NListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

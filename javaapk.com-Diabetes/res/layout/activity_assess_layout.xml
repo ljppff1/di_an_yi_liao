@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/ee_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/evaluate_self" />
+
+        <Button
+            android:id="@+id/next_btn"
+            style="@style/next_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/next_btn"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/assess_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progress_con"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="13dip"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="25.0dip"
+            android:background="@drawable/progress"
+            android:max="100"
+            android:padding="4dip"
+            android:progress="50"
+            android:progressDrawable="@drawable/asses_progress" />
+        <TextView
+            android:id="@+id/progres_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/progress_all" 
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/text_size_10"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

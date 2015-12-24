@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ee_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/report_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/risk_question_result" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/risk_question_result"
+                style="@style/item_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dip" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/report_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lis_item_result" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lis_item_result"
+                style="@style/item_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dip" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/report_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/system_result" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/system_result"
+                style="@style/item_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

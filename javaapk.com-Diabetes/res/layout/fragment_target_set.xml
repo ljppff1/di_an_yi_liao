@@ -1,0 +1,279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sugar_target" />
+
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/icon_btn_ok" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/page_title_height"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/check_dinner"
+                        style="@style/top_select_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="@string/eat_pre" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.8dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/line_target" />
+
+                <Button
+                    android:id="@+id/set_default"
+                    style="@style/check_button_style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/set_default_value" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dip"
+                android:background="@color/line_target" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/sugar_target_value"
+                    android:textColor="@color/effect_label_color"
+                    android:textSize="@dimen/text_size_15" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/target_input_width"
+                    android:layout_height="@dimen/target_width"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/sugar_persent"
+                        style="@style/target_edit"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:hint="输入糖化值"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:padding="8dip"
+                        android:text="%"
+                        android:textColor="@color/curren_day" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.8dip"
+                android:layout_marginBottom="20dip"
+                android:background="@color/line_target" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="20dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/target_height"
+                        android:background="@color/high_sugar_bg"
+                        android:text="@string/high_sugar" />
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/target_height"
+                        android:background="@color/low_sugar_bg"
+                        android:text="@string/high_sugar_pre" />
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/target_height"
+                        android:background="@color/mid_sugar_bg"
+                        android:text="@string/mid_sugar" />
+
+                    <TextView
+                        style="@style/sugar_target_label"
+                        android:layout_width="@dimen/target_width"
+                        android:layout_height="@dimen/target_height"
+                        android:background="@color/low_sugar_bg"
+                        android:text="@string/low_sugar_pre" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dip"
+                        android:layout_marginTop="@dimen/target_height_margin"
+                        android:background="@color/line_target" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dip"
+                        android:layout_marginTop="@dimen/target_height_margin"
+                        android:background="@color/line_target" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.8dip"
+                        android:layout_marginTop="@dimen/target_height_margin"
+                        android:background="@color/line_target" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/target_width"
+                        android:layout_marginTop="@dimen/target_input_margin"
+                        android:background="@drawable/target_input_bg"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/high_sugar"
+                            style="@style/target_edit"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:padding="8dip"
+                            android:text="@string/sugar_unit"
+                            android:textColor="@color/curren_day" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/target_width"
+                        android:layout_marginTop="@dimen/target_input_margin1"
+                        android:background="@drawable/target_input_bg"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/mid_sugar"
+                            style="@style/target_edit"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:padding="8dip"
+                            android:text="@string/sugar_unit"
+                            android:textColor="@color/curren_day" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/target_width"
+                        android:layout_marginTop="@dimen/target_input_margin2"
+                        android:background="@drawable/target_input_bg"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/low_sugar"
+                            style="@style/target_edit"
+                            android:layout_width="0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:inputType="numberDecimal"
+                            android:maxLength="5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:padding="8dip"
+                            android:text="@string/sugar_unit"
+                            android:textColor="@color/curren_day" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

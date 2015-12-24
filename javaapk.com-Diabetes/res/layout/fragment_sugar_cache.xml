@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/cache_sycn" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/save_btn"
+            android:background="@null"
+            android:src="@drawable/icon_btn_delete" />
+
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/ok_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/submit_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/top"
+            android:background="@color/main_divider_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_below="@id/line"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/top_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/cache_num"
+                android:textSize="@dimen/text_size_14" />
+
+            <CheckBox
+                android:id="@+id/check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="5dip"
+                android:drawableRight="@drawable/check_box_selector"
+                android:text="@string/check_all"
+                android:textColor="@color/page_title_color" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/sycn_btn"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/count_circle"
+            android:src="@drawable/sycn_cache" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dip"
+        android:background="@color/main_divider_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/cache_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/divider"
+            android:dividerHeight="0.8dip"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:listSelector="@drawable/listview_selector"
+            android:scrollingCache="false" >
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@anim/anim_loading"
+            android:indeterminateDuration="3500"
+            android:maxHeight="48dp"
+            android:maxWidth="48dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

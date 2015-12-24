@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chart"
+    style="@style/item_white_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="20dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/text_blood"
+        android:textColor="@color/curren_day"
+        android:textSize="@dimen/text_size_15" />
+
+</RelativeLayout>

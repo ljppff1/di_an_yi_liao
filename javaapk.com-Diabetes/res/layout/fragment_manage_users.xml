@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/manager_users_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/page_title"
+            android:layout_width="fill_parent" >
+
+            <Button
+                android:id="@+id/back_btn"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/icon_btn_back"
+                android:text="@string/back_btn" />
+
+            <TextView
+                style="@style/page_title_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/manage_user" />
+
+            <Button
+                android:id="@+id/mydata_btn"
+                style="@style/button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:text="@string/personal_data" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.4" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.5"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/main_topbg" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_weight="0.5" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="@dimen/photo_width"
+                        android:layout_height="@dimen/photo_width"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/photo_default"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/photo"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/main_user_name"
+                        android:textSize="@dimen/text_size_15" />
+
+                    <TextView
+                        android:id="@+id/user_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_centerHorizontal="true"
+                        android:drawableLeft="@drawable/icon_tencent_min"
+                        android:drawablePadding="2dip"
+                        android:text="@string/middle_user_level" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/main_divider_line" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <Button
+                            style="@style/button_style"
+                            android:id="@+id/member_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/target_btn_bg"
+                            android:layout_marginTop="10dip"
+                            android:padding="10dip"
+                            android:text="go家庭成员" />
+
+                        <Button
+                            style="@style/button_style"
+                            android:id="@+id/logout_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/target_btn_bg"
+                            android:layout_marginTop="10dip"
+                            android:padding="10dip"
+                            android:text="go注销" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

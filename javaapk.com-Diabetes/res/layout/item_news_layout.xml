@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/one_top_height"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/one_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_topbg" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mask_bg" />
+
+        <TextView
+            android:id="@+id/one_title"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/del_user_success"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="8dip" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/news_img_width"
+                android:layout_height="@dimen/news_img_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/content_bg"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/icon"
+                android:gravity="top|left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/news_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/news_title"
+                    android:textColor="@color/news_title"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/news_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="@string/news_summary"
+                    android:textColor="@color/main_item_text"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="4dip"
+                android:textColor="@color/news_title"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="@dimen/page_title_height"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_delete_btn"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

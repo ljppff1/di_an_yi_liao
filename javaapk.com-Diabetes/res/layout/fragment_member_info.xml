@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/icon_btn_back"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/personal_data" />
+
+        <Button
+            android:id="@+id/memberinfo_editbtn"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="8dip"
+            android:text="@string/edit" />
+    </RelativeLayout>
+    <!-- 头像 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="110dip" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main_topbg" />
+
+                <com.dian.diabetes.widget.CircleImageView
+                    android:id="@+id/photo"
+                    android:layout_width="67dip"
+                    android:layout_height="67dip"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_icon_unkown" />
+            </RelativeLayout>
+            <!-- 列表 -->
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/item_member_info" />
+
+            <!-- 二维码 -->
+
+            <LinearLayout
+                android:id="@+id/maxcard_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/memberinfo_maxcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:src="@drawable/main_topbg"
+                    android:text="@string/maxcard"
+                    android:textSize="@dimen/text_size_16" />
+
+                <ImageView
+                    android:id="@+id/maxcard"
+                    android:layout_width="67dip"
+                    android:layout_height="67dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/matrix" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

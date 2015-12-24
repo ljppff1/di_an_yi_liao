@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sugar_test_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_breakfast"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/lunch"
+                    android:textColor="#71797C"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/test_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:drawableLeft="@drawable/icon_time"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/share"
+                    android:textColor="#71797C"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <com.dian.diabetes.widget.ValueWidget
+                android:id="@+id/value"
+                android:layout_width="@dimen/value_widget"
+                android:layout_height="@dimen/value_widget"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dip" >
+            </com.dian.diabetes.widget.ValueWidget>
+
+            <ImageView
+                android:id="@+id/mask_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/remark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/state_plug"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/plug1"
+                android:layout_width="@dimen/plug_entry_width"
+                android:layout_height="@dimen/plug_entry_width"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/icon_wechat_min"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/plug2"
+                android:layout_width="@dimen/plug_entry_width"
+                android:layout_height="@dimen/plug_entry_width"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/icon_wechat_min"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/plug3"
+                android:layout_width="@dimen/plug_entry_width"
+                android:layout_height="@dimen/plug_entry_width"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/icon_wechat_min"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/plug4"
+                android:layout_width="@dimen/plug_entry_width"
+                android:layout_height="@dimen/plug_entry_width"
+                android:layout_marginLeft="3dip"
+                android:src="@drawable/icon_wechat_min"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line" />
+
+</LinearLayout>

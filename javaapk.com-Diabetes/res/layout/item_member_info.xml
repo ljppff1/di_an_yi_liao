@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="5dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/nick_name"
+            android:textColor="@color/main_user_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/memberinfo_nickname"
+            style="@style/memberinfo_item_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line"
+        android:paddingTop="5dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/age"
+            android:textColor="@color/main_user_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/memberinfo_age"
+            style="@style/memberinfo_item_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line"
+        android:paddingTop="5dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/gender"
+            android:textColor="@color/main_user_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/memberinfo_gender"
+            style="@style/memberinfo_item_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line"
+        android:paddingTop="5dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/nation"
+            android:textColor="@color/main_user_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/memberinfo_nation"
+            style="@style/memberinfo_item_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line"
+        android:paddingTop="5dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/area_province"
+            android:textColor="@color/main_user_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/memberinfo_province"
+            style="@style/memberinfo_item_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line"
+        android:paddingTop="5dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/area_city"
+            android:textColor="@color/main_user_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/memberinfo_city"
+            style="@style/memberinfo_item_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/main_divider_line"
+        android:paddingTop="5dip" />
+
+</LinearLayout>

@@ -1,0 +1,203 @@
+# view res/layout/activity_welcome.xml #generated:6
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/date_grid_fragment.xml #generated:2
+-keep class cn.ctibet.calendar.widget.NGridView { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.dian.diabetes.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.dian.diabetes.StartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.dian.diabetes.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.dian.diabetes.activity.alarm.AlarmAlert { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.dian.diabetes.activity.alarm.AlarmInitReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.dian.diabetes.activity.alarm.AlarmKlaxon { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.dian.diabetes.activity.alarm.AlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.dian.diabetes.activity.assess.AssessActivity { <init>(...); }
+
+# view res/layout/fragment_sugar_entry.xml #generated:95
+-keep class com.dian.diabetes.activity.date.DateView { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.dian.diabetes.activity.eat.EatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.dian.diabetes.activity.indicator.IndicatorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class com.dian.diabetes.activity.indicator.PressImpFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.dian.diabetes.activity.medicine.MedicineActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.dian.diabetes.activity.news.NewListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.dian.diabetes.activity.report.UserReportActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.dian.diabetes.activity.set.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class com.dian.diabetes.activity.set.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class com.dian.diabetes.activity.sport.SportActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.dian.diabetes.activity.sugar.PlanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.dian.diabetes.activity.sugar.SugarActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.dian.diabetes.activity.sugar.SugarEquipActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.dian.diabetes.activity.user.ForgetPswActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.dian.diabetes.activity.user.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.dian.diabetes.activity.user.ManageUsersActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.dian.diabetes.activity.user.MemberActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.dian.diabetes.activity.user.MemberAddFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.dian.diabetes.activity.user.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.dian.diabetes.application.AppApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.dian.diabetes.service.DataService { <init>(...); }
+
+# view AndroidManifest.xml #generated:203
+-keep class com.dian.diabetes.service.NetReceiver { <init>(...); }
+
+# view res/layout/fragment_sugar_add.xml #generated:20
+# view res/layout/fragment_sugar_equip.xml #generated:33
+-keep class com.dian.diabetes.widget.BubbleButton { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:68
+# view res/layout/activity_set_layout.xml #generated:47
+# view res/layout/fragment_member_info.xml #generated:61
+# view res/layout/item_member_layout.xml #generated:18
+# view res/layout/item_member_list.xml #generated:23
+-keep class com.dian.diabetes.widget.CircleImageView { <init>(...); }
+
+# view res/layout/fragment_sugar_add.xml #generated:231
+-keep class com.dian.diabetes.widget.HorizontalListView { <init>(...); }
+
+# view res/layout/item_indicate_layout.xml #generated:59
+# view res/layout/item_real_layout.xml #generated:49
+# view res/layout/item_real_value.xml #generated:58
+# view res/layout/item_visual_layout.xml #generated:51
+-keep class com.dian.diabetes.widget.IndicateWidget { <init>(...); }
+
+# view res/layout/fragment_eat_dataview.xml #generated:237
+# view res/layout/fragment_eat_mutitotal.xml #generated:22
+# view res/layout/fragment_press_chart.xml #generated:24
+# view res/layout/fragment_sport_dataview.xml #generated:237
+-keep class com.dian.diabetes.widget.MutiProgress { <init>(...); }
+
+# view res/layout/activity_sugar_plan.xml #generated:237
+# view res/layout/fragment_month_layout.xml #generated:104
+# view res/layout/fragment_tool_dialog.xml #generated:82
+-keep class com.dian.diabetes.widget.NGridView { <init>(...); }
+
+# view res/layout/dialog_plan_choose.xml #generated:11
+# view res/layout/fragment_eat_dataview.xml #generated:289
+# view res/layout/fragment_eat_dataview.xml #generated:364
+# view res/layout/fragment_medicine_edit.xml #generated:291
+# view res/layout/fragment_sport_dataview.xml #generated:298
+# view res/layout/fragment_sport_dataview.xml #generated:355
+# view res/layout/item_information_layout.xml #generated:25
+-keep class com.dian.diabetes.widget.NListView { <init>(...); }
+
+# view res/layout/fragment_eat_impl.xml #generated:111
+# view res/layout/fragment_indicate_chart.xml #generated:24
+# view res/layout/fragment_sport_impl.xml #generated:111
+-keep class com.dian.diabetes.widget.ProWidget { <init>(...); }
+
+# view res/layout/fragment_sugar_add.xml #generated:178
+# view res/layout/fragment_sugar_equip.xml #generated:162
+-keep class com.dian.diabetes.widget.ProgressWidget { <init>(...); }
+
+# view res/layout/fragment_sugar_effect.xml #generated:116
+-keep class com.dian.diabetes.widget.SimpleProgress { <init>(...); }
+
+# view res/layout/fragment_total_count.xml #generated:122
+# view res/layout/fragment_total_count.xml #generated:129
+# view res/layout/fragment_total_count.xml #generated:158
+# view res/layout/fragment_total_count.xml #generated:165
+# view res/layout/fragment_total_count.xml #generated:194
+# view res/layout/fragment_total_count.xml #generated:201
+# view res/layout/fragment_total_count.xml #generated:230
+# view res/layout/fragment_total_value.xml #generated:122
+# view res/layout/fragment_total_value.xml #generated:129
+# view res/layout/fragment_total_value.xml #generated:159
+# view res/layout/fragment_total_value.xml #generated:166
+# view res/layout/fragment_total_value.xml #generated:196
+# view res/layout/fragment_total_value.xml #generated:203
+# view res/layout/fragment_total_value.xml #generated:233
+# view res/layout/fragment_total_value.xml #generated:45
+# view res/layout/fragment_total_value.xml #generated:52
+# view res/layout/fragment_total_value.xml #generated:59
+# view res/layout/item_sport_view.xml #generated:114
+# view res/layout/item_sugar_cache.xml #generated:35
+# view res/layout/item_sugar_entry.xml #generated:50
+-keep class com.dian.diabetes.widget.ValueWidget { <init>(...); }
+
+# view res/layout/fragment_sugar_total.xml #generated:1
+-keep class com.dian.diabetes.widget.VerticalViewPager { <init>(...); }
+
+# view res/layout/activity_news_list.xml #generated:37
+-keep class com.dian.diabetes.widget.listview.PullRefListView { <init>(...); }
+
+# view res/layout/dialog_height_layout.xml #generated:38
+# view res/layout/dialog_hourmin_layout.xml #generated:71
+# view res/layout/dialog_hourmin_layout.xml #generated:77
+# view res/layout/dialog_sugar_input.xml #generated:46
+# view res/layout/dialog_sugar_input.xml #generated:51
+# view res/layout/dialog_sugar_input.xml #generated:56
+# view res/layout/dialog_today_layout.xml #generated:77
+# view res/layout/dialog_today_layout.xml #generated:83
+# view res/layout/dialog_today_layout.xml #generated:89
+-keep class com.dian.diabetes.widget.wheel.WheelView { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.dian.diabetes.zxing.CaptureActivity { <init>(...); }
+
+# view res/layout/activity_capture.xml #generated:16
+# view res/layout/capture.xml #generated:28
+-keep class com.dian.diabetes.zxing.view.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:229
+-keep class com.iflytek.voiceads.request.IFLYBrowser { <init>(...); }
+
+# view AndroidManifest.xml #generated:228
+-keep class com.iflytek.voiceads.update.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:227
+-keep class com.zdp.aseo.content.AseoZdpUpdateService { <init>(...); }
+

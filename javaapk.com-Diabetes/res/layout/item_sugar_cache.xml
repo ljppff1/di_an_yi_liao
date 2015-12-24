@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/cache_height"
+    android:background="@color/white"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cache_day"
+            style="@style/add_entry_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_day"
+            android:text="2014-01-01" />
+
+        <TextView
+            android:id="@+id/cache_time"
+            style="@style/add_entry_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:drawableLeft="@drawable/icon_time"
+            android:text="10:10" />
+    </LinearLayout>
+
+    <com.dian.diabetes.widget.ValueWidget
+        android:id="@+id/value"
+        android:layout_width="@dimen/value_widget"
+        android:layout_height="@dimen/value_widget"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/time" >
+    </com.dian.diabetes.widget.ValueWidget>
+    
+    <TextView 
+        android:id="@+id/new_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/trend_down_normal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/value"
+        android:text="@string/new_str"/>
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/check_normal" />
+
+</RelativeLayout>

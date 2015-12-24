@@ -1,0 +1,272 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/data_entry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <com.dian.diabetes.widget.BubbleButton
+                android:id="@+id/sycn_cache"
+                android:layout_width="@dimen/page_title_height"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:src="@drawable/share_wechat"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/scance_zxing"
+                style="@style/button_style"
+                android:layout_width="@dimen/page_title_height"
+                android:layout_height="fill_parent"
+                android:src="@drawable/icon_scancer" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/add_entry_time"
+                    style="@style/equip_entry_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_time"
+                    android:gravity="center"
+                    android:text="15:10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/main_divider_line" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/add_entry_day"
+                    style="@style/equip_entry_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_day"
+                    android:text="2014-05-05" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/main_divider_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tool_bar_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/eat"
+                style="@style/equip_entry_text"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/eat_pre" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/main_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/edit_btn"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_selector"
+                android:gravity="center" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/target_edit"
+                    android:gravity="center"
+                    android:text="@string/input_handle"
+                    android:textColor="@color/radio_text_selector"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/main_divider_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/circle_size"
+                android:layout_height="@dimen/circle_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip" >
+
+                <com.dian.diabetes.widget.ProgressWidget
+                    android:id="@+id/progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/blood_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/blood_label"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_unit"
+                        android:textColor="@color/contents_text"
+                        android:textSize="@dimen/text_size_13" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dip" >
+
+                <LinearLayout
+                    android:id="@+id/state_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/sycn_step1"
+                        android:layout_width="@dimen/equip_width"
+                        android:layout_height="@dimen/equip_width"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="12dip"
+                        android:src="@drawable/equip_unable_step1" />
+
+                    <ImageView
+                        android:id="@+id/sycn_step2"
+                        android:layout_width="@dimen/equip_width"
+                        android:layout_height="@dimen/equip_width"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="12dip"
+                        android:src="@drawable/equip_unable_step2" />
+
+                    <ImageView
+                        android:id="@+id/sycn_step3"
+                        android:layout_width="@dimen/equip_width"
+                        android:layout_height="@dimen/equip_width"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="12dip"
+                        android:src="@drawable/equip_unable_step3" />
+
+                    <ImageView
+                        android:id="@+id/sycn_step4"
+                        android:layout_width="@dimen/equip_width"
+                        android:layout_height="@dimen/equip_width"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="12dip"
+                        android:src="@drawable/equip_unable_step4" />
+
+                    <ImageView
+                        android:id="@+id/sycn_step5"
+                        android:layout_width="@dimen/equip_width"
+                        android:layout_height="@dimen/equip_width"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="12dip"
+                        android:src="@drawable/equip_unable_step5" />
+
+                    <ProgressBar
+                        android:id="@+id/cp_progress"
+                        android:layout_width="@dimen/equip_width"
+                        android:layout_height="@dimen/equip_width"
+                        android:layout_marginLeft="12dip"
+                        android:indeterminateDrawable="@drawable/equip_progress_anim"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/toast_label"
+                    style="@style/equip_entry_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/bluth_open" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageSwitcher
+            android:id="@+id/img_switcher"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal" >
+        </ImageSwitcher>
+    </LinearLayout>
+
+</LinearLayout>

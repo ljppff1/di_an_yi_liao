@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="14dip" 
+    android:paddingRight="14dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/text_size_18" 
+            android:layout_marginTop="8dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/label_color"
+            android:textSize="@dimen/text_size_14"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:text="@string/calorie" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/eat_color"
+            android:layout_marginTop="8dip"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:textColor="@color/sport_color"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</RelativeLayout>

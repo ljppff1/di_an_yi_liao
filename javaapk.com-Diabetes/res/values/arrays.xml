@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="share_str">
+        <item>新浪微博</item>
+        <item>腾讯微博</item>
+        <item>朋友圈</item>
+        <item>qq空间</item>
+    </string-array>
+    
+    <string-array name="share_key">
+        <item>sina</item>
+        <item>tecent</item>
+        <item>wechart</item>
+        <item>qq_zone</item>
+    </string-array>
+    
+    <integer-array name="share_img">
+        <item>@drawable/icon_sina_min</item>
+        <item>@drawable/icon_tencent_min</item>
+        <item>@drawable/icon_wechat_min</item>
+        <item>@drawable/icon_zone</item>
+    </integer-array>
+    
+    <integer-array name="share_big_img">
+        <item>@drawable/share_icon_sinamicroblog</item>
+        <item>@drawable/share_icon_tencentmicroblog</item>
+        <item>@drawable/share_icon_wechat</item>
+        <item>@drawable/share_icon_zone</item>
+    </integer-array>
+    
+    <string-array name="location_area">
+        <item>林芝地区</item>
+        <item>纳木错地区</item>
+        <item>雷姆哈尔地区</item>
+        <item>达西地区</item>
+    </string-array>
+
+</resources>

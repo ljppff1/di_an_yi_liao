@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 下拉刷新列表 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="loading_text_str">加载中，请稍后...</string>
+
+    <!-- 条形码扫描 -->
+    <string name="scan_title">二维码扫描</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="state">状态</string>
+    <string name="app_picker_name">应用</string>
+    <string name="app_name">迪安医疗</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="news_share">资讯分享</string>
+    <string name="evaluate_self">自我评估</string>
+    <string name="content_report">综合报告</string>
+    <string name="sport_manager">运动管理</string>
+    <string name="target_manager">指标管理</string>
+    <string name="eat_manager">饮食管理</string>
+    <string name="drug_manager">用药管理</string>
+    <string name="sys_set">系统设置</string>
+    <string name="entry">数据查看</string>
+    <string name="data_entry">数据录入</string>
+    <string name="result">控糖计划</string>
+    <string name="count">数据统计</string>
+    <string name="back_btn">返回</string>
+    <string name="submit_btn">提交</string>
+    <string name="ok_btn">确定</string>
+    <string name="set_time">时间设置</string>
+    <string name="today">今天</string>
+    <string name="cur_week">本周</string>
+    <string name="cancel_str">取消</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="day_tian">天</string>
+    <string name="hour">时</string>
+    <string name="mini">分</string>
+    <string name="share">分享</string>
+    <string name="test">测量方案</string>
+    <string name="serven_method">七点法</string>
+    <string name="click_line_hard">点击连接设备</string>
+    <string name="text_blood">单位：mmol/L</string>
+    <string name="unit">mmol/L</string>
+    <string name="blood_label">血糖值</string>
+    <string name="blood_unit">mmol/L</string>
+    <string name="last_week">最近一周</string>
+    <string name="last_month">近一个月</string>
+    <string name="last_three_month">近三个月</string>
+    <string name="all">全部</string>
+    <string name="sugar_manager_target">控糖目标</string>
+    <string name="total_label">总体</string>
+    <string name="sugar_manager_comment">控糖评价</string>
+    <string name="total_table">统计表格</string>
+    <string name="no_sugar">未记录</string>
+    <string name="sugar_ok">血糖正常</string>
+    <string name="sugar_fail">血糖超标</string>
+    <string name="user_name">用户名</string>
+    <string name="sex_location">男，22岁，广东省广州市</string>
+    <string name="middle_user_level">中级用户</string>
+    <string name="clock">闹钟</string>
+    <string name="breakfast">早餐</string>
+     <string name="breakfast_pre">早餐前</string>
+    <string name="lunch">中餐</string>
+    <string name="dinner">晚餐</string>
+    <string name="dinner_pre">晚餐前</string>
+    <string name="dinner_after">晚餐前</string>
+    <string name="sleep_pre">睡前</string>
+    <string name="sugar_test_plug">伴随状态</string>
+    <string name="input_mark">点击输入备注</string>
+    <string name="mark">备注</string>
+    <string name="sugar_unit">mmol/L</string>
+    <string name="sugar_target">控糖目标</string>
+    <string name="sugar_evalue">控糖评价</string>
+    <string name="sugar_tendency">变化趋势</string>
+    <string name="avg">平均</string>
+    <string name="show_date">显示日历</string>
+    <string name="hide_date">隐藏日历</string>
+    <string name="total">总体</string>
+    <string name="set_default_value">推荐数值</string>
+    <string name="connecting">正在连接设备</string>
+    <string name="eat_pre">餐前</string>
+    <string name="eat_after">餐后</string>
+    <string name="high_sugar">血\n糖\n超\n标</string>
+    <string name="high_sugar_pre">高\n血\n糖\n风\n险</string>
+    <string name="mid_sugar">血\n糖\n正\n常</string>
+    <string name="low_sugar_pre">低\n血\n糖\n风\n险</string>
+    <string name="effect_count">次数</string>
+    <string name="test_count">测量次数</string>
+    <string name="target_count">达标次数</string>
+    <string name="target_persent">达标率</string>
+    <string name="every_pre">餐前/睡前</string>
+    <string name="normal">正常</string>
+    <string name="ci_unit">次</string>
+    <string name="effect_high">过高</string>
+    <string name="effect_low">高/低</string>
+    <string name="test_again">重测</string>
+    <string name="week_avg">周平均值</string>
+    <string name="week">周</string>
+    <string name="cache_sycn">缓存同步</string>
+    <string name="sugar_target_value">糖化值</string>
+    <string name="cache_num">新同步数据4条</string>
+    <string name="check_all">全选</string>
+    <string name="x">X</string>
+    <string name="device_name">设备名称</string>
+    <string name="sugar_input">血糖输入</string>
+    <string name="user_self">自定义方案</string>
+    <string name="new_str">新</string>
+    <string name="add_equip">设备输入</string>
+    <string name="input_handle">手工输入</string>
+
+    <!-- 标题 -->
+    <string name="plan_sugar">血糖计划</string>
+    <string name="plan_time_set">血糖监控时间设置</string>
+    <string name="friends_diabetes">糖友圈</string>
+    <string name="diabetes_listener">血糖监测</string>
+    <string name="diabetes_manager">血糖管理</string>
+    <string name="diabetes_effect">控糖计划</string>
+    <string name="test_plan">检测计划</string>
+    <string name="test_equip">设备列表</string>
+    <string name="news">资讯分享</string>
+    <string name="news_detail">资讯详情</string>
+    <string name="sport">运动管理</string>
+
+    <!-- 提示语 -->
+    <string name="toast_label">提示</string>
+    <string name="toast_time_after">时间还没到呢，生活很美好，咱不急！</string>
+    <string name="alarm_def_title">来自迪安血糖仪的提醒</string>
+    <string name="alarm_content">老家伙起来吃药了</string>
+    <string name="alarm_default_time">1970-01-01 09:00</string>
+
+    <!-- 用户登录注册 -->
+    <string name="login">登录</string>
+    <string name="user_register">注册</string>
+    <string name="get_code">获取验证码</string>
+    <string name="nameinput_tip">输入帐号/手机号</string>
+    <string name="pswinput_tip">输入密码</string>
+    <string name="re_pswinput_tip">再输入一次密码</string>
+    <string name="forgetpsw">忘记密码？</string>
+    <string name="forgetpsw_title">忘记密码</string>
+    <string name="findpsw">找回密码</string>
+    <string name="check_tip">输入验证码</string>
+
+    <!-- 步骤 -->
+    <string name="bluth_open">正在打开蓝牙设备</string>
+    <string name="connect_device">连接设备</string>
+    <string name="trip_in">置入试纸</string>
+    <string name="get_blood">请滴血</string>
+    <string name="get_result">读取数据中</string>
+    <string name="step6">已获取数据</string>
+    <string name="trip_out">拔出试纸</string>
+
+    <!-- 用户管理 -->
+    <string name="manage_user">用户管理</string>
+    <string name="personal_data">个人资料</string>
+    <string name="set_master">设置为主成员</string>
+    <string name="addmember">添加新成员</string>
+    <string name="family_members">家庭成员</string>
+    <string name="done">完成</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="delete_members">删除成员</string>
+    <string name="nick_name">昵称</string>
+    <string name="maxcard">二维码名片</string>
+    <string name="age">年龄</string>
+    <string name="gender">性别</string>
+    <string name="nation">民族</string>
+    <string name="area_province">省份</string>
+    <string name="area_city">城市</string>
+    <string name="select_province">请选择省份</string>
+    <string name="select_city">请选择城市</string>
+    <string name="nothing">无</string>
+    <string name="man">男</string>
+    <string name="women">女</string>
+    <string name="unlimited">不限</string>
+    <string name="logout">注销登录</string>
+
+    <!-- Toast提醒 -->
+    <!-- 用户 -->
+    <string name="loging_out">正在注销&#8230;</string>
+    <string name="logout_success">注销成功</string>
+    <string name="login_success">登录成功</string>
+    <string name="register_success">注册成功</string>
+    <string name="wrong_format">用户名或密码格式错误</string>
+    <string name="wrong_input">用户名或密码错误</string>
+    <string name="wrong_connection">连接失败，请检查网络</string>
+    <string name="phone_error">手机号已经被使用</string>
+    <string name="phone_format_error">手机号格式有误</string>
+    <string name="code_error">手机校验码无效</string>
+    <string name="code_success">手机校验码获取成功</string>
+    <string name="getting_code">正在获取验证码&#8230;</string>
+    <string name="user_notfound">用户不存在</string>
+    <string name="info_illformat">输入的参数有误</string>
+    <string name="modify_psw_success">修改密码成功</string>
+    <string name="modify_success">修改成功</string>
+    <string name="user_unlogin">登录过期，请重新登录</string>
+    <string name="request_error">请求失败，请返回重新操作</string>
+    <string name="mainuser_del_error">不允许删除主成员</string>
+    <string name="server_error">请求失败啦，请稍后重新操作</string>
+    <string name="logout_label">注销</string>
+    <string name="exit_login">退出登录</string>
+    
+    <!-- 成员 -->
+    <string name="adding_member">正在添加成员&#8230;</string>
+    <string name="editing_member">正在修改数据&#8230;</string>
+    <string name="get_uinfo">正在获取个人信息&#8230;</string>
+    <string name="get_ulist">正在获取成员列表&#8230;</string>
+    <string name="setting_master">正在设置主成员&#8230;</string>
+    <string name="deleting_user">正在删除成员&#8230;</string>
+    <string name="adding_user">正在添加成员&#8230;</string>
+    <string name="uploading_avatar">正在上传头像&#8230;</string>
+    <string name="uploading_maxcard">正在上传二维码头像&#8230;</string>
+    <string name="upload_avatar_success">上传头像成功</string>
+    <string name="upload_avatar_failed">上传头像失败</string>
+    <string name="upload_maxcard_success">上传二维码成功</string>
+    <string name="upload_maxcard_failed">上传二维码失败</string>
+    <string name="update_ulist_success">更新列表成功</string>
+    <string name="set_master_success">设置主成员成功</string>
+    <string name="add_user_success">添加成员成功</string>
+    <string name="del_user_success">删除成员成功</string>
+    <string name="nickname_notnull">昵称不能为空</string>
+    <string name="sdcard_notfound">请插入sd卡上传头像</string>
+    
+    <!-- 综合报告 -->
+    <string name="comprehensive_report">结论</string>
+    <string name="exam_index">检查指标</string>
+    <string name="exam_result">建议</string>
+    <string name="start_check">初步诊断：</string>
+    <string name="check_sub">诊断年限：</string>
+    <string name="check_doctor">诊断医生：</string>
+    <string name="update_report">更新报告</string>
+    
+	<!-- 新闻 -->
+	<string name="collection">收藏</string>
+	<string name="news_title">标题</string>
+	<string name="news_summary">摘要</string>
+	<string name="favorate_title">我的收藏</string>
+	
+	
+	<!-- 饮食运动管理 -->
+	<string name="eat">饮食</string>
+	<string name="eat_total">饮食统计</string>
+	<string name="data_view">数据查看</string>
+	<string name="sugest_plan">推荐计划</string>
+	<string name="data_total">数据统计</string>
+	<string name="dinner_class">餐别</string>
+	<string name="food_name">食物名称</string>
+	<string name="chickin">鸡肉</string>
+	<string name="food_method">烹饪方法</string>
+	<string name="zha">炸</string>
+	<string name="food_count">食物重量</string>
+	<string name="default_number">0</string>
+	<string name="eat_input">饮食录入</string>
+	<string name="equels">=</string>
+	<string name="plus">+</string>
+	<string name="sub">-</string>
+	<string name="system_support">基础消耗</string>
+	<string name="calorie_net">热量净值</string>
+	<string name="total_calorie_net">总共热量净值</string>
+	<string name="calorie_struct">热量结构</string>
+	<string name="muti_total">综合统计</string>
+	<string name="eat_add_calorie">饮食摄入</string>
+	<string name="total_eat_add_calorie">总共饮食摄入</string>
+	<string name="sport_dismiss">运动消耗</string>
+	<string name="tota_sport_dismiss">总体运动消耗</string>
+	<string name="suggest_total">总体建议</string>
+	<string name="eat_plan_title">饮食计划</string>
+	<string name="calorie_dismiss">热量消耗</string>
+	<string name="eat_calorie">摄入热量</string>
+	<string name="calorie_include">卡路里含量：</string>
+	<string name="calorie">千卡</string>
+	<string name="step">步</string>
+	<string name="today_step">今日步行</string>
+	<string name="sport_input">运动录入</string>
+	<string name="sport_type">运动类型</string>
+	<string name="sport_time">运动时间</string>
+	<string name="sport_rate">运动心率</string>
+	<string name="sport_feel">运动后感觉</string>
+	<string name="user_eat_persent">各类热量类型摄入比例</string>
+	<string name="user_eat_value">各类热量类型摄入数值</string>
+	<string name="sport_strong">运动强度</string>
+	<string name="sport_total">运动统计</string>
+	<string name="sport_plan">运动计划</string>
+	<string name="food_class_persent">食物种类摄入占比</string>
+	<string name="food_class_num">食物种类摄入数量（单位：千克）</string>
+	<string name="avd_day">每日平均</string>
+	<string name="calore_avg">热量均衡</string>
+	<string name="choose">请选择</string>
+	<string name="g_unian">克</string>
+	<string name="mini_unian">分钟</string>
+	<string name="rate_unian">次/分</string>
+	<string name="to_persent">达标率</string>
+	<string name="no_cord">今天未录入任何数据</string>
+	<string name="sport_single">运动</string>
+	<string name="sport_strength_comp">各强度消耗热量占比</string>
+	<string name="sport_strength_dismiss">各强度运动热量消耗(单位：千卡)</string>
+	<string name="all_union">单位：卡路里</string>
+	<string name="sport_rate_test">运动后2min测量</string>
+	<string name="no_data">无数据展示</string>
+	<string name="input_hint">点击输入</string>
+	
+	
+	<!-- 指标 -->
+	<string name="in_press">收缩压</string>
+	<string name="out_press">舒张压</string>
+	<string name="real_indicator">检验指标</string>
+	<string name="visual_indicator">自我管理指标</string>
+	<string name="indicator_manager">自我管理指标</string>
+	<string name="weight">体重</string>
+	<string name="indicator">指标</string>
+	<string name="indicator_imp">指标录入</string>
+	<string name="BMI">BMI</string>
+	<string name="bmi_union">kg/m^2</string>
+	<string name="press_label">血压</string>
+	<string name="target_press">参考值</string>
+	<string name="waist_label">腰围</string>
+	<string name="cm_union">cm</string>
+	<string name="to_min">收缩压</string>
+	<string name="to_big">舒张压</string>
+	<string name="xinlv">心率</string>
+	<string name="mmhg">mmHg</string>
+	<string name="heart_union">次/分</string>
+	<string name="kg_unian">kg</string>
+	<string name="pretain">糖化血红蛋白</string>
+	<string name="manager_suggest">控制评价</string>
+	<string name="suggest_normal">控糖正常</string>
+	<string name="indicate_right">指标正常</string>
+	<string name="date_label">日期</string>
+	<string name="scancer">条形码</string>
+	<string name="lipid">血脂</string>
+	<string name="dan_gu_cun">胆固醇</string>
+	<string name="gan_you">甘油三脂</string>
+	<string name="high_danbai_cun">高密度脂蛋白胆固醇</string>
+	<string name="low_danbai_cun">低密度脂蛋白胆固醇</string>
+	<string name="lipid_union">mmol/L</string>
+	<string name="check_last">最近测量</string>
+	<string name="dian_indicate">迪安医学检测中心检测报告单</string>
+	<string name="user_sumary">用户概况</string>
+	<string name="sex_label">性别</string>
+	<string name="name_label">姓名</string>
+	<string name="age_label">年龄</string>
+	<string name="hospital_label">送检医院</string>
+	<string name="check_indicate">检测指标</string>
+	<string name="bingli_see">病理所见</string>
+	<string name="bingli_check">病理诊断</string>
+	<string name="target_set">目标设置</string>
+	<string name="indicate_low">指\n标\n过\n低</string>
+	<string name="indicate_normal">指\n标\n正\n常</string>
+	<string name="indicate_high">指\n标\n过\n高</string>
+	
+	<!-- 用药 -->
+	<string name="medicine_summary">药品概况</string>
+	<string name="medicine">用药情况</string>
+	<string name="medicine_name">降糖药</string>
+	<string name="medicine_unit">单次剂量:</string>
+	<string name="unit_mg">mg</string>
+	<string name="medicine_type">药品类型</string>
+	<string name="medicine_class">药品名称</string>
+	<string name="medicine_num">服用次数</string>
+	<string name="medicine_time">服用时段</string>
+	<string name="medicine_weight">服用剂量</string>
+	<string name="medicine_day">服用天数</string>
+	<string name="medicine_toast">提醒</string>
+    <string name="data_input">项目录入</string>
+    <string name="day_of_num">一天三次</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="medicine_pre">饭前服用</string>
+    <string name="out_date">已过期</string>
+    <string name="m_unit">IU</string>
+    
+    <!--评估 -->
+    <string name="next_btn">下一项</string>
+    <string name="height">身高</string>
+    <string name="weight_assess">体重</string>
+    <string name="yaowei">腰围</string>
+    <string name="assess_strong">活动强度</string>
+    <string name="sport_temp">偶尔运动</string>
+    <string name="colligate_sugestion">综合建议</string>
+    <string name="diabetes_sugestion">控糖建议</string>
+    <string name="sports_sugestion">运动饮食建议</string>
+    <string name="risk_question_result">问卷结论</string>
+    <string name="lis_item_result">指标结论</string>
+    <string name="system_result">系统诊断</string>
+    <string name="progress_all">总进度70%</string>
+    <string name="back_report">返回报告</string>
+    <string name="pre_text">正在生产综合报告,请稍后...\n预计等待时间：5分钟</string>
+    
+    <!-- 设置 -->
+    <string name="about_us">关于我们</string>
+    <string name="check_update">检测更新</string>
+    <string name="help_us">帮助</string>
+    <string name="alarm_toast">暂无</string>
+    <string name="normal_question">常见问题</string>
+        
+</resources>

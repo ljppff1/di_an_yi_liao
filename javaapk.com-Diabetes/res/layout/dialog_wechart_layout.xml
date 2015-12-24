@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        style="@style/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/friends"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/list_button_height"
+            android:textColor="#636363"
+            android:background="@color/transparent"
+            android:text="朋友圈" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider" />
+
+        <Button
+            android:id="@+id/wechart"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/list_button_height"
+            android:background="@color/transparent"
+            android:textColor="#636363"
+            android:text="微信" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/indicator_imp" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/save_btn"
+            android:background="@null"
+            android:src="@drawable/icon_btn_delete" />
+
+        <ImageButton
+            android:id="@+id/save_btn"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/icon_btn_ok" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tool_bar_height"
+                android:layout_marginTop="2dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/time_con"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/add_entry_time"
+                        style="@style/add_entry_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_time"
+                        android:gravity="center"
+                        android:text="15:10" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/main_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/day"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/add_entry_day"
+                        style="@style/add_entry_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_day"
+                        android:text="2014-05-05" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/main_divider_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tool_bar_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/eat"
+                    style="@style/check_button_style"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/waist_label" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/main_divider_line" />
+
+                <LinearLayout
+                    android:id="@+id/sycn_equip_button"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radio_btn_selector"
+                    android:gravity="center" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/target_edit"
+                        android:gravity="center"
+                        android:text="@string/input_handle"
+                        android:textColor="@color/label_color"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+
+                <RelativeLayout
+                    android:id="@+id/wast_con"
+                    style="@style/impl_item_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/eatimp_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/waist_label" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/waist_value"
+                            style="@style/medicine_edittext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:enabled="false"
+                            android:inputType="number"/>
+
+                        <TextView
+                            android:id="@id/g_nion"
+                            style="@style/eatimp_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cm_union"
+                            android:textSize="@dimen/text_size_13" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/main_divider_line" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

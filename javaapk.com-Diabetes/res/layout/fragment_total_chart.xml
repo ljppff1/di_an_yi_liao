@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_pre"
+        style="@style/total_chart_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:text="@string/today" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dip">
+
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="2014-07-10至2014-07-13"
+            android:drawableLeft="@drawable/icon_day"
+            android:textColor="@color/curren_day"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/text_blood"
+            android:textColor="@color/curren_day"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chart"
+        style="@style/item_white_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+</LinearLayout>

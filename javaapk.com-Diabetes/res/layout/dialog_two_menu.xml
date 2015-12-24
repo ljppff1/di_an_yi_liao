@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="50dip"
+    android:paddingRight="50dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_first_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="20dip"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/page_title_color" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:gravity="center_horizontal"
+            android:background="@color/main_divider_line"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" />
+
+        <TextView
+            android:id="@+id/dialog_second_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center_horizontal"
+            android:textColor="@color/page_title_color" />
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

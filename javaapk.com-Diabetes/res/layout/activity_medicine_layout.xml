@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/medicine" />
+
+        <ImageButton
+            android:id="@+id/new_medicine"
+            style="@style/button_style"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_sugar_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toast_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_help"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/label_color"
+            android:text="温馨小贴士" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/label_color"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logo"
+            android:text="点击右上角，开始添加药品"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/medicine_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@drawable/divider"
+        android:dividerHeight="0.8dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollingCache="false" />
+
+</LinearLayout>

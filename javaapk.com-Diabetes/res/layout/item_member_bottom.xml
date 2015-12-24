@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="@style/content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="20dip" >
+
+    <Button
+        android:id="@+id/new_member"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:textColor="@color/page_title_color"
+        android:textSize="@dimen/text_size_18"
+        android:drawablePadding="8dip"
+        android:drawableLeft="@drawable/icon_add_blue"
+        android:text="@string/addmember" />
+
+</LinearLayout>

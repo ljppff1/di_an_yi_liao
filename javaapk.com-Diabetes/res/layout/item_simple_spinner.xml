@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/member_spinner_text"
+    android:textColor="@color/page_title_color"
+    android:singleLine="true"
+    android:layout_width="fill_parent"
+    android:gravity="right"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/text_size_14" 
+    />

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/indicator_manager" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/data_list"
+                style="@style/button_style"
+                android:layout_width="@dimen/page_title_height"
+                android:layout_height="fill_parent"
+                android:src="@drawable/sugar_entry_list" />
+
+            <ImageButton
+                android:id="@+id/add"
+                style="@style/button_style"
+                android:layout_width="@dimen/page_title_height"
+                android:layout_height="fill_parent"
+                android:src="@drawable/icon_sugar_add"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/model"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/model_switch"
+                    style="@style/top_select_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indicator" />
+                
+                <TextView
+                    android:id="@+id/model_switch1"
+                    style="@style/top_select_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@null"
+                    android:text="@string/indicator" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/main_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/time"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/add_entry_time"
+                    style="@style/top_select_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/last_month" />
+            </LinearLayout>
+            
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/main_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/lipid_con"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/lipid"
+                    style="@style/top_select_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dan_gu_cun" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/main_divider_line" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

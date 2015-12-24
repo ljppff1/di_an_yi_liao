@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/page_title"
+        android:layout_width="fill_parent" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/back_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:text="@string/back_btn" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/diabetes_listener" />
+
+        <ImageButton
+            android:id="@+id/chart_value"
+            style="@style/button_style"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/new_sugar"
+            android:src="@drawable/sugar_entry_chart" />
+
+        <ImageButton
+            android:id="@+id/new_sugar"
+            style="@style/button_style"
+            android:layout_width="@dimen/page_title_height"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_sugar_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.8dip"
+                    android:background="@color/date_view_line" />
+
+                <RelativeLayout
+                    style="@style/date_show"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_date_height" >
+
+                    <ImageButton
+                        android:id="@+id/pre"
+                        android:layout_width="@dimen/dimen_date_height"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@null"
+                        android:src="@drawable/arrow_left" />
+
+                    <TextView
+                        android:id="@+id/current_day"
+                        style="@style/curent_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/today" />
+
+                    <ImageButton
+                        android:id="@+id/next"
+                        android:layout_width="@dimen/dimen_date_height"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:src="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.dian.diabetes.activity.date.DateView
+                android:id="@+id/date_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.8dip" 
+                android:visibility="gone"/>
+
+            <FrameLayout
+                android:id="@+id/list_chart"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/date_controller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_date_height"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/date_pull" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:clickable="false"
+                android:text="@string/show_date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_10" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

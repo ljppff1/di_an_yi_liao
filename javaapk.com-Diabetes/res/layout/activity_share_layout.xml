@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        style="@style/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="8dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/list_head_height"
+            android:gravity="left|center_vertical"
+            android:text="@string/share" />
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/divider"/>
+
+        <GridView
+            android:id="@+id/share_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:cacheColorHint="#00000000"
+            android:horizontalSpacing="5dip"
+            android:listSelector="@drawable/listview_selector"
+            android:numColumns="4"
+            android:padding="8dip"
+            android:verticalSpacing="5dip" >
+        </GridView>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/list_button_height"
+            android:layout_margin="8dip"
+            android:text="@string/cancel_str" />
+    </LinearLayout>
+
+</RelativeLayout>

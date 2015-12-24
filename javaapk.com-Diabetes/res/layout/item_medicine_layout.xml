@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/eat_medicine_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/day_of_num"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_size_12" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="10dip" />
+
+        <TextView
+            android:id="@+id/eat_dinner_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/medicine_pre"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/medicine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/medicine_name"
+            android:textColor="@color/item_black_selector"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/medicine_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:gravity="center_vertical"
+            android:text="@string/medicine_name"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/weight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/medicine_unit"
+            android:textColor="@color/item_black_selector"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/default_number"
+            android:textColor="@color/radio_text_selector"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/weight_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/unit_mg"
+            android:textColor="@color/item_black_selector"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/out_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/out_date"
+        android:textColor="@color/trend_up_bad"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
+
+</LinearLayout>

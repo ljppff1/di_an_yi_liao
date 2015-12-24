@@ -1,0 +1,601 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+
+    <style name="TranDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+
+    <!-- progress -->
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Passing_Green">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#70A800</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#70A800</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Beauty_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF3D7F</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF3D7F</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Warning_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#E74C3C</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#E74C3C</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#6DBCDB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#6DBCDB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Grace_Yellow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FFC73B</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FFC73B</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Funny_Orange">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF530D</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF530D</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Twinkle_Night">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#ECF0F1</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#ECF0F1</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="list_dialog" parent="@style/Dialog">
+        <item name="android:textColor">@color/title_str_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="page_title_str">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/title_str_color</item>
+    </style>
+
+    <style name="page_title">
+        <item name="android:layout_height">@dimen/page_title_height</item>
+        <item name="android:background">@color/page_title_color</item>
+    </style>
+
+    <style name="content">
+        <item name="android:background">@color/white_content_color</item>
+    </style>
+
+    <style name="ee_content">
+        <item name="android:background">@color/page_content_color</item>
+    </style>
+
+    <style name="main_button_item">
+        <item name="android:padding">8dip</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="main_button_text">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/main_item_text</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="radio_left_item">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/radio_text_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radio_btnleft_selector</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="radio_item">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/radio_text_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radio_btn_selector</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="radio_right_item">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/radio_text_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radio_btnright_selector</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="bottom_radio_item">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bottom_radio_selector</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+    </style>
+
+    <style name="radio_button_top">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/blue_selector</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="check_button_style">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/radio_text_selector</item>
+        <item name="android:background">@drawable/radio_btn_selector</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="back_button_style" parent="button_style">
+        <item name="android:drawableLeft">@drawable/icon_btn_back</item>
+        <item name="android:paddingRight">54dip</item>
+    </style>
+
+    <style name="next_button_style" parent="button_style">
+        <item name="android:drawableRight">@drawable/icon_btn_next</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+    <style name="ok_button_style" parent="button_style">
+        <item name="android:drawableLeft">@drawable/icon_btn_ok</item>
+        <item name="android:paddingRight">5dip</item>
+    </style>
+
+    <style name="logout_style" parent="button_style">
+        <item name="android:background">@drawable/ic_login_btn_big</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="curent_day">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="eat_curent_day">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/page_title_color</item>
+    </style>
+
+    <style name="effect_day">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/page_title_color</item>
+    </style>
+
+    <style name="dialog_btn_style">
+        <item name="android:textColor">@color/label_color_selector</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:background">@drawable/list_item_selector</item>
+    </style>
+
+    <style name="date_label">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">#4bc4d9</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pick_photo_style">
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="photo_dialog_style" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="dialog_fragment_fade_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_fragment_fadein</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fragment_fadeout</item>
+    </style>
+
+    <style name="dialog_left_right_anim">
+        <item name="android:windowEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="week">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/week_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="grid_clock">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/main_divider_line</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="grid_title">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+    </style>
+
+    <style name="item_white_bg">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="date_show">
+        <item name="android:background">@color/date_show</item>
+    </style>
+
+    <style name="eat_sport_date">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="effect_title">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/effect_title_str</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:background">@color/effect_title</item>
+    </style>
+
+    <style name="effect_title_label">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/curren_day</item>
+        <item name="android:layout_margin">12dip</item>
+    </style>
+
+    <style name="effect_title_value">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/curren_day</item>
+        <item name="android:layout_margin">12dip</item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="sugar_effect_label">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/curren_day</item>
+        <item name="android:layout_marginTop">8dip</item>
+    </style>
+
+    <style name="sugar_effect_value">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/curren_day</item>
+    </style>
+
+    <style name="total_chart_title">
+        <item name="android:textColor">@color/curren_day</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:background">@color/chart_title</item>
+    </style>
+
+    <style name="sugar_target_label">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingMultiplier">0.85</item>
+    </style>
+
+    <style name="target_edit">
+        <item name="android:textColor">@color/input_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="add_entry_text">
+        <item name="android:textColor">@color/date_show</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="equip_entry_text">
+        <item name="android:textColor">@color/equip_date_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="effect_label">
+        <item name="android:textColor">@color/effect_label_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="effect_value">
+        <item name="android:textColor">@color/main_item_text</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="effect_line">
+        <item name="android:layout_marginTop">10dip</item>
+    </style>
+
+    <style name="radio_group">
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+        <item name="android:layout_marginRight">6dip</item>
+        <item name="android:layout_marginBottom">4dip</item>
+        <item name="android:background">@drawable/radio_group_bg</item>
+    </style>
+
+    <style name="title_text_btn">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="login_edit_text">
+        <item name="android:layout_height">45dip</item>
+        <item name="android:background">@drawable/target_input_bg</item>
+        <item name="android:ems">20</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">8dip</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="memberinfo_item_edittext">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minWidth">50dip</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:gravity">right</item>
+        <item name="android:enabled">false</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:textColor">@color/main_user_name</item>
+    </style>
+
+    <style name="memberinfoedit_item_edittext" parent="@style/memberinfo_item_edittext">
+        <item name="android:textColor">@color/page_title_color</item>
+        <item name="android:enabled">true</item>
+    </style>
+
+    <style name="listview_style">
+        <item name="android:scrollbars">none</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
+    <style name="alarm_alert" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="report_label">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="eatimp_label">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+    </style>
+
+    <style name="eatimp_value" parent="check_button_style">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:textColor">@color/page_title_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="persent_progress">
+        <item name="android:textColor">@color/radio_text_selector</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+    </style>
+
+    <style name="medicine_label">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="medicine_item">
+        <item name="android:paddingTop">15dip</item>
+        <item name="android:paddingBottom">15dip</item>
+        <item name="android:background">@drawable/listview_selector</item>
+    </style>
+
+    <style name="indicate_head">
+        <item name="android:paddingTop">15dip</item>
+        <item name="android:paddingBottom">15dip</item>
+    </style>
+
+    <style name="medicine_edittext">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minWidth">50dip</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/page_title_color</item>
+    </style>
+
+    <style name="item_eat">
+        <item name="android:textColor">@color/eat_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="chart_title_text">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:paddingLeft">10dip</item>
+    </style>
+
+    <style name="top_select_label">
+        <item name="android:textColor">@color/page_title_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:drawableRight">@drawable/ic_arrow_down</item>
+        <item name="android:drawablePadding">8dip</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="indicate_top">
+        <item name="android:textColor">@color/page_title_color</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="impl_item_style">
+        <item name="android:padding">9dip</item>
+        <item name="android:background">@drawable/listview_selector</item>
+    </style>
+
+    <style name="indicate_label_title">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="bingli_value">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="report_title">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:padding">8dip</item>
+    </style>
+
+    <style name="item_content">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="user_center_item">
+        <item name="android:padding">8dip</item>
+        <item name="android:background">@drawable/usercenter_item_selector</item>
+    </style>
+
+    <style name="field_label">
+        <item name="android:textColor">@color/label_color</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="info_item_container">
+        <item name="android:padding">8dip</item>
+        <item name="android:background">@drawable/help_item_bg</item>
+    </style>
+
+</resources>
